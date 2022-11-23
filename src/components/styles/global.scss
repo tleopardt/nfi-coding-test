@@ -1,0 +1,26 @@
+@import './variable';
+@import './app';
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    border: 0;
+    padding: 10px 24px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+.--bgColor {
+    &-primary {
+        background-color: $primary-color;
+        color: $text-light;
+
+        &:disabled {
+            opacity: 0.5;
+        }
+    }
+}
